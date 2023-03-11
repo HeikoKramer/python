@@ -1,5 +1,41 @@
 # Python Notes
 
+## Variables and Data Types
+Python has a simple and intuitive syntax for defining variables and assigning values to them. The data type of a variable is automatically inferred based on the value assigned to it. However, you can also explicitly specify the data type of a variable using type casting. <br>
+<br>
+Link:[Official documentation on Python data types](https://docs.python.org/3/library/datatypes.html) <br>
+<br>
+**NOTE:** Best practice in Python is to name variables all **lower case**, with **underscores** between words. <br>
+So `my_string` instead of `myString` or `is_valid` instead of `isValid`. <br>
+
+```python
+# integer variable
+x = 10
+print(x)  # output: 10
+
+# float variable
+y = 3.14
+print(y)  # output: 3.14
+
+# string variables
+name = 'Alice'
+print(name)  # output: Alice
+last_name = "Little"
+print(last_name) # output: Little
+# NOTE: single & double quotes accepted
+
+# boolean variable
+is_valid = True
+print(is_valid)  # output: True
+is_valid = False
+print(is_valid)  # output: False
+# NOTE: booleans have to start with a capital letter
+
+# list variable
+numbers = [1, 2, 3, 4]
+print(numbers)  # output: [1, 2, 3, 4]
+```
+
 ## Strings in Python
 ### String declaration
 String declaration in Python is done by enclosing a sequence of characters within quotes. Python supports both single quotes ('...') and double quotes ("...") to declare strings. <br>
