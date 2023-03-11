@@ -3,7 +3,7 @@
 ## Variables and Data Types
 Python has a simple and intuitive syntax for defining variables and assigning values to them. The data type of a variable is automatically inferred based on the value assigned to it. However, you can also explicitly specify the data type of a variable using type casting. <br>
 <br>
-Link:[Official documentation on Python data types](https://docs.python.org/3/library/datatypes.html) <br>
+Link: [Official documentation on Python data types](https://docs.python.org/3/library/datatypes.html) <br>
 <br>
 **NOTE:** Best practice in Python is to name variables all **lower case**, with **underscores** between words. <br>
 So `my_string` instead of `myString` or `is_valid` instead of `isValid`. <br>
