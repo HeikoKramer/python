@@ -6,6 +6,8 @@ String declaration in Python is done by enclosing a sequence of characters withi
 
 ```python
 my_string = "Hello, World!"
+
+print(my_string) # Output: Hello, World!
 ```
 
 ### String concatenation
@@ -14,8 +16,10 @@ String concatenation is the process of combining two or more strings into a sing
 ```python
 string1 = "Hello"
 string2 = "World"
+
 concatenated_string = string1 + " " + string2
-print(concatenated_string) # Output: "Hello World"
+
+print(concatenated_string) # Output: Hello World
 ```
 
 ### Escape characters 
@@ -44,7 +48,7 @@ print('He said, "I\'m busy."') # Output: He said, "I'm busy."
 ### String functions
 Python provides a wide range of string manipulation functions that can be used to modify and analyze strings. These functions make it easy to perform common string operations such as finding substrings, replacing text, and converting case. String functions in Python are essential to many programming tasks, from data cleaning and formatting to web scraping and natural language processing. <br>
 <br>
-Link [The official documentation for string functions in Python](https://docs.python.org/3/library/stdtypes.html#string-methods) on the Python Software Foundation's website. <br>
+Link: [The official documentation for string functions in Python](https://docs.python.org/3/library/stdtypes.html#string-methods) on the Python Software Foundation's website. <br>
 
 ```python
 my_string = "Hello, World!"
