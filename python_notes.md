@@ -341,3 +341,54 @@ print(min(-3, -1, -5))  # Output: -5
 print(round(3.14159, 2))  # Output: 3.14
 # round(number, ndigits) rounds number to ndigits decimal places.
 ```
+
+### **math** Module
+In Python, math is a built-in module that provides various mathematical functions and constants. When you `import math`, you are essentially telling Python to load this module so that you can access the functions and constants it provides. <br>
+<br>
+The import statement in Python is used to import a module into your program's namespace, which makes the names (i.e., functions, variables, classes) defined in the module accessible in your code. In this case, we use `import math` to import the **math module**, which provides mathematical functions like `sin`, `cos`, `exp`, and `log`, as well as constants like `pi` and `e`. <br>
+
+It's worth noting that you can import only specific functions or constants from a module by using the from statement. For example, you could write `from math import pi, sin` to import only the `pi` and `sin` functions from the math module. You could also import every component of the module with `from math import *`. In the following code block, we import the entire math module because we use several of its functions and constants. <br>
+
+```python
+import math
+
+# Round a number up to the nearest integer
+ceil_value = math.ceil(3.2)
+print(ceil_value)  # Output: 4
+
+# Round a number down to the nearest integer
+floor_value = math.floor(3.9)
+print(floor_value)  # Output: 3
+
+# Calculate the exponential of a number
+exp_value = math.exp(2)
+print(exp_value)  # Output: 7.3890560989306495
+
+# Calculate the natural logarithm of a number
+log_value = math.log(10)
+print(log_value)  # Output: 2.302585092994046
+
+# Calculate the square root of a number
+sqrt_value = math.sqrt(16)
+print(sqrt_value)  # Output: 4.0
+
+# Convert radians to degrees
+deg_value = math.degrees(math.pi/2)
+print(deg_value)  # Output: 90.0
+
+# Convert degrees to radians
+rad_value = math.radians(90)
+print(rad_value)  # Output: 1.5707963267948966
+
+# Compute the trigonometric sine of an angle in radians
+sin_value = math.sin(math.pi/2)
+print(sin_value)  # Output: 1.0
+
+# Compute the trigonometric cosine of an angle in radians
+cos_value = math.cos(math.pi/2)
+print(cos_value)  # Output: 6.123233995736766e-17
+
+# Compute the trigonometric tangent of an angle in radians
+tan_value = math.tan(math.pi/4)
+print(tan_value)  # Output: 0.9999999999999999
+```
