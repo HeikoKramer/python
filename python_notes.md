@@ -135,3 +135,34 @@ print(", ".join(my_list)) # Output: Hello, World
 my_string = "  hello, world!  "
 print(my_string.strip()) # Output: hello, world!
 ```
+
+## Numbers in Python
+### Types of Numbers
+In Python, there are different types of numbers that you can work with. The most common types of numbers are integers, floating-point numbers, and complex numbers. <br>
+Here's an overview of these different number data types with examples: <br>
+
+```python
+# Integers
+x = 10
+y = -5
+z = 0
+print(type(x))  # Output: <class 'int'>
+print(type(y))  # Output: <class 'int'>
+print(type(z))  # Output: <class 'int'>
+
+# Floating-point numbers
+a = 3.14
+b = -2.5
+c = 0.0
+print(type(a))  # Output: <class 'float'>
+print(type(b))  # Output: <class 'float'>
+print(type(c))  # Output: <class 'float'>
+
+# Complex numbers
+m = 2 + 3j
+n = 4 - 2j
+o = 0 + 1j
+print(type(m))  # Output: <class 'complex'>
+print(type(n))  # Output: <class 'complex'>
+print(type(o))  # Output: <class 'complex'>
+```
