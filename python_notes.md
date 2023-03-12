@@ -316,3 +316,28 @@ print("My name is %s and I am %d years old." % (name, age))  # Output: "My name 
 # We're using % formatting to embed the values of the name and age variables into the string. 
 # %s is a placeholder for a string. %d is a placeholder for an integer. 
 ```
+
+### Number Functions
+Python provides a wide range of built-in functions that allow you to perform various operations on numbers. In the following code block you can see examples of some of the most common number functions in Python (excluding **math** module). <br>
+
+```python
+# Absolute value
+print(abs(-10))  # Output: 10
+# abs(x) returns the absolute value of x.
+
+# Power
+print(pow(2, 3))  # Output: 8
+# pow(x, y) returns x raised to the power of y.
+
+# Maximum 
+print(max(1, 5, 3, 2))  # Output: 5
+# max(iterable) returns the largest item in the iterable.
+
+# Minimum
+print(min(-3, -1, -5))  # Output: -5
+# min(iterable) returns the smallest item in the iterable.
+
+# Rounding
+print(round(3.14159, 2))  # Output: 3.14
+# round(number, ndigits) rounds number to ndigits decimal places.
+```
