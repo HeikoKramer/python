@@ -229,3 +229,38 @@ print(result)  # Output: 15.0
 result = 10 / (2 * 3)
 print(result)  # Output: 1.6666666666666667
 ```
+
+### The Modulus Operator
+The modulus operator **%** returns the remainder of a division operation. It can be used to perform various calculations, such as determining if a number is even or odd, or if it's divisible by another number. <br>
+
+```python
+# Example 1 - Checking if a number is even or odd
+num1 = 10
+if num1 % 2 == 0:
+    print(f"{num1} is even")
+else:
+    print(f"{num1} is odd")
+# Output: 10 is even 
+
+num2 = 5
+if num2 % 2 == 0:
+    print(f"{num2} is even")
+else:
+    print(f"{num2} is odd")
+# Output: 5 is odd 
+
+# Example 2 - Checking if a number is divisible by another number
+num3 = 15
+if num3 % 5 == 0:
+    print(f"{num3} is divisible by 5")
+else:
+    print(f"{num3} is not divisible by 5")
+# Output: 15 is divisible by 5 
+
+num4 = 7
+if num4 % 3 == 0:
+    print(f"{num4} is divisible by 3")
+else:
+    print(f"{num4} is not divisible by 3")
+# Output: 7 is not divisible by 3 
+```
