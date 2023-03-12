@@ -264,3 +264,55 @@ else:
     print(f"{num4} is not divisible by 3")
 # Output: 7 is not divisible by 3 
 ```
+
+### Numbers & Strings
+Combining numbers with strings is a common task in Python programming. It allows you to create dynamic messages, labels, and data summaries that include both text and numeric values. Python provides several ways to combine numbers and strings and to transform both data types vice versa. Following some common examples. <br>
+
+```python
+# Numbers in strings
+string_with_numbers = "I have 5 apples and 3 bananas"
+numbers_list = [int(s) for s in string_with_numbers.split() if s.isdigit()]
+print(numbers_list)  # Output: [5, 3]
+# split(): This splits the string into a list of words, using whitespace as the delimiter: ["I", "have", "5", "apples", "and", "3", "bananas"].
+# if s.isdigit(): This condition checks whether each element of the list is a digit or not. If it is, the element is included in the list comprehension.
+# int(s): This converts each element that is a digit (i.e., a string containing only numbers) to an integer using the int() function.
+
+# Transform numbers to strings
+num = 42
+string_num = str(num)
+print(type(string_num))  # Output: <class 'str'>
+
+# Transform string number values to numbers
+string_num = "123"
+num = int(string_num)
+print(type(num))  # Output: <class 'int'>
+
+# Number variable in string
+age = 25
+print("I am " + str(age) + " years old.")  # Output: "I am 25 years old."
+
+# Another example
+price = 12.99
+quantity = 3
+total = price * quantity
+print("The total cost is $" + str(total))  # Output: "The total cost is $38.97"
+
+# Using f-strings
+name = "Alice"
+age = 25
+print(f"My name is {name} and I am {age} years old.")  # Output: "My name is Alice and I am 25 years old."
+# The f before the opening quotation mark indicates that the string is an f-string, and any expressions inside curly braces {} will be evaluated and inserted into the string.
+
+# Using string formatting
+name = "Bob"
+age = 35
+print("My name is {} and I am {} years old.".format(name, age))  # Output: "My name is Bob and I am 35 years old."
+# The curly braces {} are used as placeholders for the values, and the values are passed to the str.format() method as arguments.
+
+# Using % formatting
+name = "Charlie"
+age = 45
+print("My name is %s and I am %d years old." % (name, age))  # Output: "My name is Charlie and I am 45 years old."
+# We're using % formatting to embed the values of the name and age variables into the string. 
+# %s is a placeholder for a string. %d is a placeholder for an integer. 
+```
