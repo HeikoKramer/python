@@ -137,6 +137,8 @@ print(my_string.strip()) # Output: hello, world!
 ```
 
 ## Numbers in Python
+Python is a popular programming language that is widely used for working with numbers and performing mathematical operations. Python provides a wide range of built-in functions and libraries for working with numbers, making it easy to perform simple or complex mathematical computations. <br>
+
 ### Types of Numbers
 In Python, there are different types of numbers that you can work with. The most common types of numbers are integers, floating-point numbers, and complex numbers. <br>
 Here's an overview of these different number data types with examples: <br>
@@ -165,4 +167,44 @@ o = 0 + 1j
 print(type(m))  # Output: <class 'complex'>
 print(type(n))  # Output: <class 'complex'>
 print(type(o))  # Output: <class 'complex'>
+```
+
+### Math Operators
+Let's look at some examples of basic math operations. In the following code block, we will perform addition, subtraction, multiplication, division, and modulus operations on two numbers: <br>
+
+```python
+# Addition
+x = 10
+y = 5
+result = x + y
+print("The result of addition is:", result)
+# Output: The result of addition is: 15
+
+# Subtraction
+x = 10
+y = 5
+result = x - y
+print("The result of subtraction is:", result)
+# Output: The result of subtraction is: 5 
+
+# Multiplication
+x = 10
+y = 5
+result = x * y
+print("The result of multiplication is:", result)
+# Output: The result of multiplication is: 50 
+
+# Division
+x = 10
+y = 5
+result = x / y
+print("The result of division is:", result)
+# Output: The result of division is: 2.0 
+
+# Modulus
+x = 10
+y = 5
+result = x % y
+print("The result of modulus is:", result)
+# Output: The result of modulus is: 0 
 ```
