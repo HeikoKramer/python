@@ -208,3 +208,24 @@ result = x % y
 print("The result of modulus is:", result)
 # Output: The result of modulus is: 0 
 ```
+
+### Order of Math Operations
+In Python, the order of math operations is determined by the rules of operator precedence. It's important to be aware of these rules when performing complex calculations, as they can affect the outcome of the calculation. Here are some examples of how to determine the order of math operations in Python: <br>
+
+```python
+# Example 1
+result = 10 + 5 * 2
+print(result)  # Output: 20
+
+# Example 2
+result = (10 + 5) * 2
+print(result)  # Output: 30
+
+# Example 3
+result = 10 / 2 * 3
+print(result)  # Output: 15.0
+
+# Example 4
+result = 10 / (2 * 3)
+print(result)  # Output: 1.6666666666666667
+```
