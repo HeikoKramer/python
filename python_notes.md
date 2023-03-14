@@ -392,3 +392,54 @@ print(cos_value)  # Output: 6.123233995736766e-17
 tan_value = math.tan(math.pi/4)
 print(tan_value)  # Output: 0.9999999999999999
 ```
+
+## User Input
+To accept input from a user during the execution of the program is relatively easy in Python, as the language provides a built-in function called `input()`. Input can be of various types, such as strings, integers, floats, and so on. The text withing the function's brackets is called **prompt** `input("The user will see this text"` – this is text is displayed to the user when she is asked for the input.<br>
+<br>
+Example 1: Accepting a string input from the user and printing it <br>
+
+```python
+# Prompt the user to enter their name
+name = input("Please enter your name: ")
+# Output: Please enter your name:
+# Input: Susi
+
+# Print the name entered by the user
+print("Hello, " + name + "!")
+# Output: Hello, Susi!
+```
+
+Example 2: Accepting an integer input from the user and performing a calculation <br>
+
+```python
+# Prompt the user to enter their age
+age = int(input("Please enter your age: "))
+# Output: Please enter your age: 
+# Input: 41
+
+# Calculate the number of days the user has lived
+days_lived = age * 365
+
+# Print the result
+print("You have lived for approximately " + str(days_lived) + " days.")
+# Output: You have lived for approximately 14965 days. 
+```
+
+Example 3: Accepting a float input from the user and performing a calculation <br>
+
+```python
+# Prompt the user to enter a temperature in Celsius
+celsius = float(input("Please enter the temperature in Celsius: "))
+# Output: Please enter the temperature in Celsius: 
+# Input: 25.5
+
+# Convert the temperature to Fahrenheit
+fahrenheit = (celsius * 9 / 5) + 32
+
+# Print the result
+print("The temperature in Fahrenheit is: " + str(fahrenheit) + " degrees.")
+# Output: The temperature in Fahrenheit is: 77.9 degrees.
+```
+
+**NOTE:** The system will produce an error if you accept only a specific data type but an other input has been made: <br>
+For example *float* is expected, but *string* was entered: `ValueError: could not convert string to float: 'Susi'` <br>
