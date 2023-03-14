@@ -394,7 +394,7 @@ print(tan_value)  # Output: 0.9999999999999999
 ```
 
 ## User Input
-To accept input from a user during the execution of the program is relatively easy in Python, as the language provides a built-in function called `input()`. Input can be of various types, such as strings, integers, floats, and so on. The text withing the function's brackets is called **prompt** `input("The user will see this text"` – this is text is displayed to the user when she is asked for the input.<br>
+To accept input from a user during the execution of the program is relatively easy in Python, as the language provides a built-in function called `input()`. The text withing the function's brackets is called **prompt** `input("The user will see this text"` – this text is displayed to the user when she is asked for the input. By default Python will convert any Input into a string. To restrict the input to a specific type, such as an integer or a floats, you've to specifically declare this as shown in example 2 and 3 below. <br>
 <br>
 Example 1: Accepting a string input from the user and printing it <br>
 
