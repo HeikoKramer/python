@@ -497,3 +497,38 @@ if search_item in fruits:
 else:
     print(search_item, "not found")
 ```
+
+### List of Lists
+A list of lists, also known as a **2D list**, is a list where each item in the list is itself a list. This is useful when you want to represent a grid or a table of data. <br>
+<br>
+In the following example, we create a list of lists called `grid`. Each item in `grid` is itself a list of three integers. We then demonstrate how to access and modify items in the grid, add new rows and columns to the grid, and remove rows from the grid: <br>
+
+```python
+# Creating a list of lists
+grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Accessing an item in a list of lists
+print(grid[0][0]) # Output: 1
+print(grid[1][2]) # Output: 6
+
+# Changing an item in a list of lists
+grid[1][1] = 'X'
+print(grid) # Output: [[1, 2, 3], [4, 'X', 6], [7, 8, 9]]
+
+# Adding a row to a list of lists
+new_row = [10, 11, 12]
+grid.append(new_row)
+print(grid) # Output: [[1, 2, 3], [4, 'X', 6], [7, 8, 9], [10, 11, 12]]
+
+# Adding an item to an existing row in a list of lists
+grid[2].append(10)
+print(grid) # Output: [[1, 2, 3], [4, 'X', 6], [7, 8, 9, 10], [10, 11, 12]]
+
+# Removing a row from a list of lists
+del grid[0]
+print(grid) # Output: [[4, 'X', 6], [7, 8, 9, 10], [10, 11, 12]]
+```
