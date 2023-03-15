@@ -570,3 +570,40 @@ print(str_list)    # Output: ["apple", "banana", "cherry"]
 print(tuple_list)  # Output: [(1, "apple"), (2, "banana"), (3, "cherry")]
 print(dict_list)   # Output: [{"apple": 1, "banana": 2, "cherry": 3}, {"orange": 4, "pear": 5}]
 ```
+
+You can also use Python basefunctionality to limit for example user input to a specific data type. Following we're using a `ValueError` excemption to ensure only integers are added to our list: <br>
+
+```python
+# Create an empty list to store integers
+int_list = []
+
+# Prompt the user to enter an integer, and add it to the list
+while True:
+    try:
+        user_input = input("Enter an integer (or write \"done\" to finish): ")
+        if user_input == 'done':
+            break
+        # Use the int() function to convert the user's input to an integer
+        user_int = int(user_input)
+        # Add the integer to the list
+        int_list.append(user_int)
+    except ValueError:
+        # If the user enters something that can't be converted to an integer,
+        # print an error message and continue to the next iteration of the loop
+        print("Invalid input. Please enter an integer.")
+
+# Print the list of integers entered by the user
+print("List of integers:", int_list)
+
+# Example In- / Output flow:                                                                                                                                              
+# Output: Enter an integer (or write "done" to finish):                                                                                                                   
+# Input: 7                                                                                                                                                                
+# Output: Enter an integer (or write "done" to finish):                                                                                                                   
+# Input: Wurst                                                                                                                                                            
+# Output: Invalid input. Please enter an integer.                                                                                                                         
+# Output: Enter an integer (or write "done" to finish): 
+# Input: 9                                                                                                                                                                
+# Output: Enter an integer (or write "done" to finish): 
+# Input: done
+# Output: List of integers: [7, 9] 
+```
