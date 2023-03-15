@@ -445,7 +445,7 @@ print("The temperature in Fahrenheit is: " + str(fahrenheit) + " degrees.")
 For example *float* is expected, but *string* was entered: `ValueError: could not convert string to float: 'Susi'` <br>
 
 ## Lists in Python
-Lists are enclosed in square brackets and allow you to store, access and manipulate collections of data in a single variable. Lists can hold different data types, such as integers, floats, strings, and even other lists. You can access, modify, add, and remove items from a list using a variety of built-in methods and indexing techniques. <br>
+Lists are enclosed in square brackets and allow you to store, access and manipulate collections of data in a single variable. Lists can hold different data types, such as integers, floats, strings, and even other lists. You can access, modify, add, and remove items from a list using a variety of built-in methods and indexing techniques. Python's list index starts with `[0]`. <br>
 
 ```python
 # Creating a list of integers
