@@ -443,3 +443,57 @@ print("The temperature in Fahrenheit is: " + str(fahrenheit) + " degrees.")
 
 **NOTE:** The system will produce an error if you accept only a specific data type but an other input has been made: <br>
 For example *float* is expected, but *string* was entered: `ValueError: could not convert string to float: 'Susi'` <br>
+
+## Lists in Python
+Lists are enclosed in square brackets and allow you to store, access and manipulate collections of data in a single variable. Lists can hold different data types, such as integers, floats, strings, and even other lists. You can access, modify, add, and remove items from a list using a variety of built-in methods and indexing techniques. <br>
+
+```python
+# Creating a list of integers
+numbers = [1, 2, 3, 4, 5]
+print(numbers) # Output: [1, 2, 3, 4, 5]
+
+# Creating a list of strings
+fruits = ['apple', 'banana', 'orange']
+print(fruits) # Output: ['apple', 'banana', 'orange']
+
+# Creating a list of mixed data types
+mixed = [1, 'hello', 3.14, True]
+print(mixed) # Output: [1, 'hello', 3.14, True]
+
+# Accessing items in a list using indexing
+print(fruits[0]) # Output: 'apple'
+print(numbers[-1]) # Output: 5
+
+# Slicing a list to get a subset of items
+print(fruits[1:3]) # Output: ['banana', 'orange']
+
+# Changing an item in a list
+fruits[0] = 'pear'
+print(fruits) # Output: ['pear', 'banana', 'orange']
+
+# Adding an item to the end of a list
+fruits.append('grape')
+print(fruits) # Output: ['pear', 'banana', 'orange', 'grape']
+
+# Removing an item from a list
+fruits.remove('banana')
+print(fruits) # Output: ['pear', 'orange', 'grape']
+```
+
+Here two examples that are combining lists with user input: <br> 
+
+```python
+# Adding an item to a list from user input
+numbers = [1, 2, 3]
+new_number = int(input("Enter a new number: ")) # Input: 7
+numbers.append(new_number)
+print(numbers) # Output: [1, 2, 3, 7]
+
+# Searching for an item in a list
+fruits = ['apple', 'banana', 'orange']
+search_item = input("Enter a fruit to search for: ") # Input: Apple
+if search_item in fruits:
+    print("Found", search_item) # Output: Found Apple  
+else:
+    print(search_item, "not found")
+```
