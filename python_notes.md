@@ -532,3 +532,41 @@ print(grid) # Output: [[1, 2, 3], [4, 'X', 6], [7, 8, 9, 10], [10, 11, 12]]
 del grid[0]
 print(grid) # Output: [[4, 'X', 6], [7, 8, 9, 10], [10, 11, 12]]
 ```
+
+### Lists of specific Data Types
+In Python, you can create lists that are limited to specific data types using the `typing` module. <br>
+<br>
+The `typing` module is a part of the Python standard library that provides support for type hints and annotations in Python code. It contains a set of classes and functions that can be used to define types, including built-in types, custom types, and generic types. These types can be used to annotate function arguments and return values, as well as variable assignments. <br>
+<br>
+**List:** <br>
+The `List` class is a generic type that represents a list of values of a specific type. For example, `List[int]` would represent a list of integers. It is commonly used in function annotations to indicate that a function expects a list of a certain type as an argument, or returns a list of a certain type. <br>
+<br>
+**Tuple:** <br>
+The `Tuple` class is another generic type that represents a fixed-length sequence of values of specific types. For example, `Tuple[int, str]` would represent a tuple containing an integer followed by a string. It is commonly used in function annotations to indicate that a function returns multiple values of specific types, or accepts multiple arguments of specific types. <br>
+<br>
+**Dict:** <br>
+The `Dict` class is a generic type that represents a dictionary with keys and values of specific types. For example, `Dict[str, int]` would represent a dictionary with string keys and integer values. It is commonly used in function annotations to indicate that a function expects a dictionary with keys and values of specific types as an argument, or returns a dictionary with keys and values of specific types. <br>
+<br>
+In the following example, we import the `List`, `Tuple`, and `Dict` classes from the `typing` module: <br>
+
+```python
+from typing import List,Tuple,Dict
+
+# Create a list of integers
+int_list: List[int] = [1, 2, 3, 4, 5]
+
+# Create a list of strings
+str_list: List[str] = ["apple", "banana", "cherry"]
+
+# Create a list of tuples, where each tuple contains an integer and a string
+tuple_list: List[Tuple[int, str]] = [(1, "apple"), (2, "banana"), (3, "cherry")]
+
+# Create a list of dictionaries, where each dictionary has a string key and an integer value
+dict_list: List[Dict[str, int]] = [{"apple": 1, "banana": 2, "cherry": 3}, {"orange": 4, "pear": 5}]
+
+# Print the contents of the lists
+print(int_list)    # Output: [1, 2, 3, 4, 5]
+print(str_list)    # Output: ["apple", "banana", "cherry"]
+print(tuple_list)  # Output: [(1, "apple"), (2, "banana"), (3, "cherry")]
+print(dict_list)   # Output: [{"apple": 1, "banana": 2, "cherry": 3}, {"orange": 4, "pear": 5}]
+```
