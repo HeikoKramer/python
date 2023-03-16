@@ -498,6 +498,31 @@ else:
     print(search_item, "not found")
 ```
 
+### Python List Index
+In Python, a list is an ordered collection of items, and each item in a list has an index that indicates its position in the list. The first item in a list has an index of **0,** the second item has an index of **1**, and so on. You can access items in a list using their index by enclosing the index in square brackets after the name of the list. <br>
+<br>
+Python also supports **negative list indices**, which allow you to access items in a list counting from the end of the list instead of the beginning. The last item in a list has an index of **-1**, the second-to-last item has an index of **-2**, and so on. Negative indices can be useful in situations where you want to access the end of a list without knowing the length of the list. <br>
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+# Access the first element of the list
+first_number = numbers[0] 
+print(first_number) # Output: 1 
+
+# Access the second element of the list
+second_number = numbers[1] 
+print(second_number) # Output: 2 
+
+# Access the last element of the list
+last_number = numbers[-1] 
+print(last_number) # Output: 5 
+
+# Access the second-to-last element of the list
+second_last_number = numbers[-2] 
+print(second_last_number) # Output: 4 
+```
+
 ### List of Lists
 A list of lists, also known as a **2D list**, is a list where each item in the list is itself a list. This is useful when you want to represent a grid or a table of data. <br>
 <br>
