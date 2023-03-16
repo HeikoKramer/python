@@ -661,3 +661,24 @@ print(my_list) # Output: [1, 2, 3, 4]
 my_list.extend([5, 6, 7])
 print(my_list) # Output: [1, 2, 3, 4, 5, 6, 7]
 ```
+
+#### insert()
+The `insert()` method is a built-in function in Python that allows you to add an element to a list **at a specific index**. It can be used to insert a new element at the beginning, middle, or end of a list, and can also be used to add multiple elements at specific indices. <br>
+
+```python
+creatures = ['Unicorn', 'Dragon', 'Phoenix']
+
+# Insert an element at a specific index
+creatures.insert(1, 'Griffin')
+print(creatures) # Output: ['Unicorn', 'Griffin', 'Dragon', 'Phoenix']
+
+# Insert multiple elements at specific indices
+creatures.insert(0, 'Basilisk')
+creatures.insert(3, 'Kraken')
+print(creatures) # Output: ['Basilisk', 'Unicorn', 'Griffin', 'Kraken', 'Dragon', 'Phoenix']
+
+# Insert elements at negative indices (counting from the end of the list)
+creatures.insert(-1, 'Mermaid')
+creatures.insert(-3, 'Siren')
+print(creatures) # Output: ['Basilisk', 'Unicorn', 'Griffin', 'Kraken', 'Dragon', 'Siren', 'Phoenix', 'Mermaid']
+```
