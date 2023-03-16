@@ -607,3 +607,38 @@ print("List of integers:", int_list)
 # Input: done
 # Output: List of integers: [7, 9] 
 ```
+
+### List Functions
+Python provides many built-in functions for manipulating lists, which makes it easy to work with them. For example, the `len()` function can be used to determine the length of a list, while the `append()` function can be used to add an element to the end of a list. The `insert()` function can be used to add an element at a specific position in the list, while the `remove()` function can be used to remove a specific element from the list. <br>
+<br>
+Other useful functions for working with lists include `sort()`, which can be used to sort the elements of a list in ascending or descending order, and `reverse()`, which can be used to reverse the order of the elements in a list. The `index()` function can be used to find the position of a specific element in the list, while the `count()` function can be used to count the number of times a specific element appears in the list. <br>
+
+#### extend()
+The `extend()` method is a built-in function in Python that allows you to add elements from one list to another list. It is used to concatenate multiple lists or add items from another iterable to an existing list. The `extend()` method modifies the original list and can be used to concatenate multiple lists, add items from another iterable, or even add characters from a string. <br>
+
+```python
+### Example 1: Extending a list with another list ###
+
+# Define two lists to work with
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+# Use the extend method to add the contents of list2 to list1
+list1.extend(list2)
+
+# Print the updated list1
+print(list1) # Output: [1, 2, 3, 4, 5, 6]
+
+
+### Example 2: Extending a list with an iterable ###
+
+# Define a list and a tuple to work with
+list1 = [1, 2, 3]
+tuple1 = (4, 5, 6)
+
+# Use the extend method to add the contents of tuple1 to list1
+list1.extend(tuple1)
+
+# Print the updated list1
+print(list1) # Output: [1, 2, 3, 4, 5, 6]
+```
