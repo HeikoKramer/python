@@ -642,3 +642,22 @@ list1.extend(tuple1)
 # Print the updated list1
 print(list1) # Output: [1, 2, 3, 4, 5, 6]
 ```
+
+#### extend() vs. append()
+In Python, both methods `extend()` and `append()` are used to add elements to a list, but they behave differently: <br>
+
+* `append()` adds a single element to the end of a list.
+* `extend()` adds elements from an iterable (such as a list, tuple, or string) to the end of a list.
+
+```python
+# Define a list to work with
+my_list = [1, 2, 3]
+
+# Append an element to the list
+my_list.append(4)
+print(my_list) # Output: [1, 2, 3, 4]
+
+# Extend the list with another list
+my_list.extend([5, 6, 7])
+print(my_list) # Output: [1, 2, 3, 4, 5, 6, 7]
+```
