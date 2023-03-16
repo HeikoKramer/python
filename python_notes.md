@@ -707,3 +707,20 @@ creatures.insert(-1, 'Mermaid')
 creatures.insert(-3, 'Siren')
 print(creatures) # Output: ['Basilisk', 'Unicorn', 'Griffin', 'Kraken', 'Dragon', 'Siren', 'Phoenix', 'Mermaid']
 ```
+
+#### remove()
+The `remove()` function is a built-in function in Python that allows you to remove a specific item from a list. You can remove **by index** or **by value**. <br>
+
+```python
+wild_west_heroes = ['Billy the Kid', 'Jesse James', 'Wyatt Earp', 'Butch Cassidy']
+
+# Example 1 – remove by value
+# remove 'Billy the Kid' from the list
+wild_west_heroes.remove('Billy the Kid')
+print(wild_west_heroes) # Output: ['Jesse James', 'Wyatt Earp', 'Butch Cassidy']
+
+# Example 2 – remove by index
+# remove the first element from the list
+wild_west_heroes.remove(wild_west_heroes[0])
+print(wild_west_heroes) # Output: ['Wyatt Earp', 'Butch Cassidy'] 
+```
