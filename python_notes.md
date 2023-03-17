@@ -737,3 +737,63 @@ my_list.clear()
 print("List after clear():", my_list)  # Output: List after clear(): []
 ```
 
+#### pop()
+The `pop()` method is a built-in list function used to remove and return the last item from the list or the item at a specified index. If you provide an index as an argument, it will remove and return the item at that index. If no index is provided, it removes and returns the last item. <br>
+
+```python
+my_list = [1, 2, 3, 4, 5]
+
+# Using pop() without an index, removing and returning the last item
+removed_item = my_list.pop()
+print("Removed item:", removed_item)  # Output: Removed item: 5
+print("List after pop():", my_list)  # Output: List after pop(): [1, 2, 3, 4]
+
+# Using pop() with an index, removing and returning the item at index 1
+removed_item = my_list.pop(1)
+print("Removed item at index 1:", removed_item)  # Output: Removed item at index 1: 2
+print("List after pop(1):", my_list)  # Output: List after pop(1): [1, 3, 4]
+```
+
+#### index()
+The `index()` method is a built-in list function that helps you find the index of the first occurrence of a specified value in a list. If the value is not present in the list, a ValueError will be raised. <br>
+
+```python
+fruits = ['apple', 'banana', 'orange', 'grape', 'mango']
+
+# Finding the index of a value present in the list
+fruit_to_find = 'orange'
+try:
+    index = fruits.index(fruit_to_find)
+    print(f"{fruit_to_find} found at index:", index)  # Output: orange found at index: 2
+except ValueError:
+    print(f"{fruit_to_find} not found in the list.")
+
+# Finding the index of a value not present in the list
+fruit_to_find = 'kiwi'
+try:
+    index = fruits.index(fruit_to_find)
+    print(f"{fruit_to_find} found at index:", index)
+except ValueError:
+    print(f"{fruit_to_find} not found in the list.")  # Output: kiwi not found in the list.
+```
+
+The `index()` function can also be used with optional `start` and `end` parameters, allowing you to search for the specified value within a specific range of indices in the list. The `start` parameter specifies the starting index to search from, and the `end` parameter specifies the ending index (exclusive). <br>
+
+```python
+job_titles = ['engineer', 'designer', 'developer', 'manager', 'developer', 'analyst']
+
+# Finding the index of a value within a specific range
+job_to_find = 'developer'
+try:
+    index = job_titles.index(job_to_find, 3, 6)  # Search between indices 3 (inclusive) and 6 (exclusive)
+    print(f"{job_to_find} found at index:", index)  # Output: developer found at index: 4
+except ValueError:
+    print(f"{job_to_find} not found in the specified range.")
+
+# When the value is not within the specified range
+try:
+    index = job_titles.index(job_to_find, 1, 3)  # Search between indices 1 (inclusive) and 3 (exclusive)
+    print(f"{job_to_find} found at index:", index)
+except ValueError:
+    print(f"{job_to_find} not found in the specified range.")  # Output: developer not found in the specified range.
+```
