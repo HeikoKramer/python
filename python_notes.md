@@ -724,3 +724,16 @@ print(wild_west_heroes) # Output: ['Jesse James', 'Wyatt Earp', 'Butch Cassidy']
 wild_west_heroes.remove(wild_west_heroes[0])
 print(wild_west_heroes) # Output: ['Wyatt Earp', 'Butch Cassidy'] 
 ```
+
+#### clear()
+The `clear()` method in Python is a built-in list function used to remove all items from a list. This method modifies the original list, making it an empty list. <br>
+
+```python
+my_list = [1, 2, 3, 4, 5]
+print("Original List:", my_list)  # Output: Original List: [1, 2, 3, 4, 5]
+
+# Using the clear() method to remove all elements from the list
+my_list.clear()
+print("List after clear():", my_list)  # Output: List after clear(): []
+```
+
