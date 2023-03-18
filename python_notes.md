@@ -797,3 +797,16 @@ try:
 except ValueError:
     print(f"{job_to_find} not found in the specified range.")  # Output: developer not found in the specified range.
 ```
+
+#### count()
+The `count()` function is a built-in list method that returns the number of occurrences of a specified value in the list. <br>
+
+```python
+superheroes = ['Batman', 'Superman', 'Wonder Woman', 'Batman', 'Flash', 'Batman']
+
+# Counting the occurrences of a value in the list
+hero_to_count = 'Batman'
+count = superheroes.count(hero_to_count)
+
+print(f"{hero_to_count} appears {count} times in the list.")  # Output: Batman appears 3 times in the list.
+```
