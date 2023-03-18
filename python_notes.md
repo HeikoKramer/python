@@ -810,3 +810,70 @@ count = superheroes.count(hero_to_count)
 
 print(f"{hero_to_count} appears {count} times in the list.")  # Output: Batman appears 3 times in the list.
 ```
+
+#### sort()
+The `sort()` method is a built-in list function that allows you to sort the elements of a list in ascending order by default. You can also sort the list in descending order by providing the optional reverse=True argument. The method sorts the list in-place, meaning it modifies the original list without creating a new one. <br>
+
+```python
+car_brands = ['Toyota', 'Honda', 'Ford', 'BMW', 'Audi']
+
+# Sorting the list in ascending order (default behavior)
+car_brands.sort()
+print("Ascending order:", car_brands)  
+# Output: Ascending order: ['Audi', 'BMW', 'Ford', 'Honda', 'Toyota']
+
+# Sorting the list in descending order
+car_brands.sort(reverse=True)
+print("Descending order:", car_brands)  
+# Output: Descending order: ['Toyota', 'Honda', 'Ford', 'BMW', 'Audi']
+```
+
+You can also use the key parameter to specify a custom function to determine the sort order. For example, you can sort a list of strings based on their length: <br>
+
+```python
+animals = ['elephant', 'cat', 'lion', 'giraffe', 'bear']
+
+# Sorting the list based on the length of the strings
+animals.sort(key=len)
+print("Sorted by length:", animals)  
+# Output: Sorted by length: ['cat', 'lion', 'bear', 'giraffe', 'elephant']
+```
+
+The `key` parameter for the `sort()` function accepts a custom function that you can define to determine the sort order based on specific attributes or calculations. The function should take a single argument and return a value that is used to sort the list. <br>
+
+```python
+# sorting a list of strings based on the last character
+
+words = ['apple', 'banana', 'pear', 'grape', 'cherry']
+
+# Define a function that takes a single string as input and returns its last character
+def last_char(word):
+    return word[-1]  # Access the last character in the string using negative indexing
+
+# Use the custom function 'last_char' as the key function for the sort() method
+words.sort(key=last_char)
+
+print("Sorted by last character:", words)
+# Output: Sorted by last character: ['banana', 'apple', 'grape', 'pear', 'cherry']
+```
+
+```python
+# sorting a list of dictionaries based on a specific key
+
+students = [
+    {'name': 'Alice', 'age': 22},
+    {'name': 'Bob', 'age': 25},
+    {'name': 'Charlie', 'age': 20}
+]
+
+# Define a function that takes a single dictionary as input and returns the value associated with the 'age' key
+def age_key(student):
+    return student['age']  # Access the value associated with the 'age' key in the dictionary
+
+# Use the custom function 'age_key' as the key function for the sort() method
+students.sort(key=age_key)
+
+print("Sorted by age:", students)
+# Output: Sorted by age: [{'name': 'Charlie', 'age': 20}, {'name': 'Alice', 'age': 22}, {'name': 'Bob', 'age': 25}]
+```
+
