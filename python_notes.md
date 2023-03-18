@@ -889,3 +889,28 @@ instruments.reverse()
 print("Reversed list:", instruments)
 # Output: Reversed list: ['saxophone', 'violin', 'drums', 'piano', 'guitar']
 ```
+
+#### copy()
+The `copy()` method that allows you to create a shallow copy of a list. When you create a copy of a list using this method, the new list contains the same elements as the original list, but both lists are separate objects. Any changes made to the copy won't affect the original list, and vice versa. <br>
+
+```python
+book_genres = ['Mystery', 'Science Fiction', 'Romance', 'Fantasy', 'Biography']
+
+# Create a copy of the original list using the copy() method
+copied_genres = book_genres.copy()
+
+print("Original list:", book_genres)
+# Output: Original list: ['Mystery', 'Science Fiction', 'Romance', 'Fantasy', 'Biography']
+
+print("Copied list:", copied_genres)
+# Output: Copied list: ['Mystery', 'Science Fiction', 'Romance', 'Fantasy', 'Biography']
+
+# Modify the copied list
+copied_genres.append('Horror')
+
+print("Modified copied list:", copied_genres)
+# Output: Modified copied list: ['Mystery', 'Science Fiction', 'Romance', 'Fantasy', 'Biography', 'Horror']
+
+print("Original list after modifying the copied list:", book_genres)
+# Output: Original list: ['Mystery', 'Science Fiction', 'Romance', 'Fantasy', 'Biography']
+```
