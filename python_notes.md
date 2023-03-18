@@ -877,3 +877,15 @@ print("Sorted by age:", students)
 # Output: Sorted by age: [{'name': 'Charlie', 'age': 20}, {'name': 'Alice', 'age': 22}, {'name': 'Bob', 'age': 25}]
 ```
 
+#### reverse()
+The `reverse()` method is a built-in list function in Python that allows you to reverse the order of elements in a list. This method modifies the original list in-place, meaning it reverses the elements directly within the list without creating a new one. <br>
+
+```python
+instruments = ['guitar', 'piano', 'drums', 'violin', 'saxophone']
+
+# Reversing the order of elements in the list using the reverse() method
+instruments.reverse()
+
+print("Reversed list:", instruments)
+# Output: Reversed list: ['saxophone', 'violin', 'drums', 'piano', 'guitar']
+```
