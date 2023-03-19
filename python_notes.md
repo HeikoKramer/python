@@ -914,3 +914,94 @@ print("Modified copied list:", copied_genres)
 print("Original list after modifying the copied list:", book_genres)
 # Output: Original list: ['Mystery', 'Science Fiction', 'Romance', 'Fantasy', 'Biography']
 ```
+
+## Tupels
+A tuple is a built-in data type in Python, used for storing an ordered, immutable collection of elements. Tuples are similar to lists, but unlike lists, they cannot be modified after they are created. This means that elements within a tuple cannot be added, removed, or changed once the tuple is defined. Tuples are often used to store related pieces of data, such as coordinates or RGB color values. <br>
+<br>
+Tuples are created by placing a **comma-separated** sequence of elements inside parentheses `()`. <br>
+There base functionalities are quite similar to lists. <br>
+
+```python
+animals = ('lion', 'tiger', 'elephant', 'giraffe', 'zebra')
+
+first_animal = animals[0]
+print("First animal:", first_animal)
+# Output: First animal: lion
+
+last_animal = animals[-1]
+print("Last animal:", last_animal)
+# Output: Last animal: zebra
+
+first_three_animals = animals[:3]
+print("First three animals:", first_three_animals)
+# Output: First three animals: ('lion', 'tiger', 'elephant')
+```
+
+Although tuples are immutable, they can contain mutable elements, such as lists: <br>
+
+```python
+mixed_tuple = (1, 2, ['a', 'b'], 3)
+
+# Modifying an element inside the mutable list within the tuple
+mixed_tuple[2][1] = 'c'  
+
+print("Modified mixed tuple:", mixed_tuple)
+# Output: Modified mixed tuple: (1, 2, ['a', 'c'], 3)
+```
+
+But generally, if you're changing a value, adding a value, and removing a value, Python raises an exception (`TypeError` or `AttributeError`), indicating that the operation is not supported on tuples due to their immutability. <br>
+
+```python
+colors = ('red', 'green', 'blue')
+
+# Attempting to change a value within the tuple
+try:
+    colors[1] = 'yellow'
+except TypeError as e:
+    print(f"Error while changing value: {e}")
+# Output: Error while changing value: 'tuple' object does not support item assignment
+
+# Attempting to add a value to the tuple
+try:
+    colors.append('orange')
+except AttributeError as e:
+    print(f"Error while adding value: {e}")
+# Output: Error while adding value: 'tuple' object has no attribute 'append'
+
+# Attempting to remove a value from the tuple
+try:
+    colors.remove('green')
+except AttributeError as e:
+    print(f"Error while removing value: {e}")
+# Output: Error while removing value: 'tuple' object has no attribute 'remove'
+```
+
+## Functions
+In Python, you can create custom functions using the `def` keyword. Functions are reusable pieces of code that can be called with a specific set of input values, known as arguments, and return a result. Creating custom functions helps improve code organization, modularity, and maintainability, as well as reducing redundancy. <br>
+<br>
+To define a function, you start with the `def` keyword, followed by the function name and a pair of parentheses containing any input parameters. After the parentheses, add a colon to mark the beginning of the function body. The function body should be indented to indicate the scope of the function. <br>
+
+```python
+# function that adds two numbers
+def add_numbers(a, b):
+    result = a + b
+    return result
+
+sum_result = add_numbers(3, 5)
+print("Sum of 3 and 5:", sum_result)  # Output: Sum of 3 and 5: 8
+```
+
+Functions can also have default parameter values, which are used when no value is provided for a specific parameter during the function call. To define a default value for a parameter, use the assignment operator (`=`) followed by the default value within the function definition: <br>
+
+```python
+# function to create greeting, default is "Hello, $Name!"
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+welcome_message = greet("John")
+print(welcome_message)  # Output: Hello, John!
+
+custom_greeting = greet("Jane", "Good morning")
+print(custom_greeting)  # Output: Good morning, Jane!
+```
+
