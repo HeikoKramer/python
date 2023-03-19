@@ -1005,3 +1005,46 @@ custom_greeting = greet("Jane", "Good morning")
 print(custom_greeting)  # Output: Good morning, Jane!
 ```
 
+### return
+The `return` keyword in Python is used within a function to indicate that the function should terminate and send back a specified value to the caller. The value can be a single object or multiple objects separated by commas. If no value is provided after the `return` keyword, the function returns `None` by default. <br>
+<br>
+In this example, the `square()` function calculates the square of the given number and returns the result using the `return` keyword: <br>
+
+```python
+def square(number):
+    result = number ** 2
+    return result
+
+squared_value = square(4)
+print("Squared value of 4:", squared_value)  # Output: Squared value of 4: 16
+```
+
+In this example, the `get_name_and_age()` function returns two values (name and age) using the `return` keyword. When multiple values are returned, they are packed into a tuple by default: <br>
+
+```python
+def get_name_and_age():
+    name = "Alice"
+    age = 30
+    return name, age
+
+person_name, person_age = get_name_and_age()
+print("Name:", person_name)  # Output: Name: Alice
+print("Age:", person_age)    # Output: Age: 30
+```
+
+In this example, the divide function checks if the divisor is zero. If it is, the function prints an error message and returns early using the return keyword without any value. In this case, the returned value is None by default: <br>
+
+```python
+def divide(a, b):
+    if b == 0:
+        print("Error: Division by zero")
+        return
+    result = a / b
+    return result
+
+output = divide(10, 0)
+# Output: Error: Division by zero
+print("Output:", output)  # Output: Output: None
+```
+
+The `return` keyword allows you to control the flow of your functions and define what values should be sent back to the caller. It helps make your code more modular and reusable, as well as allowing for better error handling and early termination when necessary. <br>
