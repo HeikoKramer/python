@@ -1140,4 +1140,20 @@ print("Your grade is:", grade)
 # Output: Your grade is: B
 ```
 
+### IF NOT
+You can perform a **false check** by using the `not` keyword to reverse the truthiness of a condition. This can be helpful when you want to execute code when a condition is not met, or when the condition evaluates to `False`. <br>
 
+```python
+if not condition:
+    # Code to execute if the condition is False
+```
+
+Here's an example with values: <br>
+
+```python
+temperature = 20
+
+if not temperature > 25:
+    print("The temperature is not greater than 25.")
+# Output: The temperature is not greater than 25.
+```
