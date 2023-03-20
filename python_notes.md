@@ -1157,3 +1157,58 @@ if not temperature > 25:
     print("The temperature is not greater than 25.")
 # Output: The temperature is not greater than 25.
 ```
+
+## Comparison Operators
+Comparison operators enable the evaluation of relationships between values in programming. They are vital for controlling the flow of a program through conditional statements, allowing for dynamic and adaptable code. <br>
+<br>
+In Python, comparison operators are straightforward and easy to read, closely resembling their mathematical counterparts. <br>
+
+```python
+# Equal to (==)
+if 5 == 5:
+    print("5 is equal to 5")  # Output: 5 is equal to 5
+
+# Not equal to (!=)
+if 4 != 5:
+    print("4 is not equal to 5")  # Output: 4 is not equal to 5
+
+# Less than (<)
+if 3 < 4:
+    print("3 is less than 4")  # Output: 3 is less than 4
+
+# Greater than (>)
+if 6 > 5:
+    print("6 is greater than 5")  # Output: 6 is greater than 5
+
+# Less than or equal to (<=)
+if 4 <= 4:
+    print("4 is less than or equal to 4")  # Output: 4 is less than or equal to 4
+
+# Greater than or equal to (>=)
+if 7 >= 6:
+    print("7 is greater than or equal to 6")  # Output: 7 is greater than or equal to 6
+```
+
+Chaining comparisons in Python allows you to check multiple conditions in a single expression, making the code shorter and more readable. <br>
+
+```python
+# Example 1
+x = 5
+if 3 < x < 7:
+    print("x is between 3 and 7")  # Output: x is between 3 and 7
+
+# Example 2
+y = 10
+if 8 <= y <= 12:
+    print("y is between 8 and 12")  # Output: y is between 8 and 12
+
+# Example 3
+a, b, c = 3, 5, 9
+if a < b < c:
+    print("a is less than b, and b is less than c")  # Output: a is less than b, and b is less than c
+
+# Example 4
+num = 4
+if 0 < num < 5 and num % 2 == 0:
+    print("num is an even number between 1 and 4")  # Output: num is an even number between 1 and 4
+```
