@@ -1048,3 +1048,96 @@ print("Output:", output)  # Output: Output: None
 ```
 
 The `return` keyword allows you to control the flow of your functions and define what values should be sent back to the caller. It helps make your code more modular and reusable, as well as allowing for better error handling and early termination when necessary. <br>
+
+## IF, ELIF, ELSE 
+**if**, **elif** and **else** statements are a fundamental control structure that allows your program to make decisions based on certain conditions. They enable your code to execute specific blocks of code depending on whether the given condition is `True` or `False`. This branching mechanism can lead to different outcomes in your program depending on the input or the state of your variables. <br>
+<br>
+Such statements are a fundamental concept of programming and appear in most programming languages. But there are a few specifics in Python to be considered: <br>
+<br>
+**Indentation**: In Python, indentation is used to define the scope of the if statements. Unlike some other languages that use braces, Python relies on consistent indentation to determine which code blocks belong to the if, elif, or else branches. This makes Python code generally more readable and consistent. The basic structure of an if statement in Python is: <br>
+
+```python
+if condition:
+    # Code to execute if the condition is True
+```
+
+Those checks can be done on **Truthy** and **Falsy** values: <br>
+
+```python
+# Checking if a value is truthy (not empty, non-zero) or falsy (empty, zero)
+if some_value:
+    # Code to execute if the value is truthy
+else:
+    # Code to execute if the value is falsy
+```
+
+Or on **multiple conditions**: <br>
+
+```python
+# Checking if multiple conditions are met using 'and', 'or', and 'not'
+if condition1 and condition2:
+    # Code to execute if both conditions are True
+elif condition1 or condition2:
+    # Code to execute if either condition1 or condition2 is True
+elif not condition1:
+    # Code to execute if condition1 is False
+```
+
+
+**Inline if statement (ternary operator)**: Python supports a concise **inline if statement**, also known as a **ternary operator**. This allows you to write simple if-else statements in a single line:
+
+```python
+# Using an inline if statement with multiple conditions
+# result = value_if_both_true if condition1 and condition2 else value_if_not_both_true
+
+x = 5
+y = 10
+
+# Check if both x and y are positive, and assign "both positive" or "not both positive" accordingly
+result = "both positive" if x > 0 and y > 0 else "not both positive"
+
+print(result)  # Output: both positive
+```
+
+Following some examples with values. <br>
+1) A simple if statement: <br>
+
+```python
+age = 18
+
+if age >= 18:
+    print("You are an adult.")
+# Output: You are an adult.
+```
+
+2) An if-else statement: <br>
+
+```python
+temperature = 15
+
+if temperature >= 20:
+    print("It's warm outside.")
+else:
+    print("It's cold outside.")
+# Output: It's cold outside.
+```
+
+3) An if-elif-else statement: <br>
+
+```python
+score = 85
+
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+else:
+    grade = 'D'
+
+print("Your grade is:", grade)
+# Output: Your grade is: B
+```
+
+
