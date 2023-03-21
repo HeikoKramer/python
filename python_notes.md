@@ -1235,3 +1235,116 @@ num = 4
 if 0 < num < 5 and num % 2 == 0:
     print("num is an even number between 1 and 4")  # Output: num is an even number between 1 and 4
 ```
+
+## Dictionaries
+Python dictionaries are a built-in data structure that allows you to store and manage **key-value pairs**. Dictionaries are mutable, unordered, and do not allow duplicate keys. They are commonly used for tasks like data organization, counting occurrences, and configuration settings. Dictionaries can be created using curly braces `{}` with keys and values separated by colons, or by using the `dict()` constructor. <br>
+
+```python
+# Creating a dictionary using curly braces
+superheroes = {
+    "Iron Man": "Tony stark",
+    "Captain America": "Steve Rogers",
+    "Black Widow": "Natasha Romanoff",
+}
+
+# Creating a dictionary using the dict() constructor
+western_movies = dict([
+    ("The Good, the Bad and the Ugly", 1966),
+    ("Once Upon a Time in the West", 1968),
+    ("Unforgiven", 1992),
+])
+```
+
+Accessing a value using a key: <br>
+
+```python
+print(superheroes["Iron Man"])  # Output: Tony stark
+```
+
+Updating an existing key-value pair: <br>
+
+```python
+superheroes["Iron Man"] = "Tony Stark"
+```
+
+Adding a new key-value pair: <br>
+
+```python
+superheroes["Hulk"] = "Bruce Banner"
+```
+
+Checking if a key exists in the dictionary: <br>
+
+```python
+print("Batman" in superheroes)  # Output: False
+```
+
+The default output for a non-existing key if `False`. By using the `get()` method, you can specify a default output. Here a more advanced example: <br>
+
+```python
+# Get user input
+user_input = input("Enter a superhero name: ")
+# Output: Enter a superhero name: 
+
+# Use the get() method to retrieve the value for the user-input key or return "Unknown superhero" if the key doesn't exist
+secret_identity = superheroes.get(user_input, "Unknown superhero")
+
+if secret_identity == "Unknown superhero":
+    print(f"{user_input} is an unknown superhero.")
+# Input: Batman
+# Output: Batman is an unknown superhero.
+else:
+    print(f"The secret identity of {user_input} is: {secret_identity}")
+# Input: Iron Man
+# Output: The secret identity of Iron Man is: Tony Stark
+```
+
+Removing a key-value pair using the `del` keyword <br>
+
+```python
+del western_movies["The Good, the Bad and the Ugly"]
+```
+
+Iterating through keys and values in a dictionary: <br>
+
+```python
+for key, value in superheroes.items():
+    print(key, ":", value)
+    # Iron Man : Tony Stark (Updated)
+    # Captain America : Steve Rogers
+    # Black Widow : Natasha Romanoff
+    # Hulk : Bruce Banner
+```
+
+To search for a value instead of a key, you have to loop through the entire dictionary: <br>
+
+```python
+# Get user input
+user_input = input("Enter a secret identity: ")
+# Output: Enter a secret identity: Tony Stark
+
+# Search for the value in the dictionary and print the corresponding key
+found = False
+for superhero, secret_identity in superheroes.items():
+    if secret_identity == user_input:
+        print(f"{user_input} is the secret identity of {superhero}.")
+        found = True
+        break
+# Input: Tony Stark
+# Tony Stark is the secret identity of Iron Man
+
+if not found:
+    print(f"{user_input} is not the secret identity of any known superhero.")
+# Input: Bruce Wayne
+# Output: Bruce Wayne is not the secret identity of any known superhero.
+```
+
+Merging two dictionaries: <br>
+
+```python
+industries = {"Apple": "Technology", "Ford": "Automotive"}
+more_industries = {"Pfizer": "Pharmaceutical", "Sony": "Electronics"}
+industries.update(more_industries)
+print(industries)
+# Output: {'Apple': 'Technology', 'Ford': 'Automotive', 'Pfizer': 'Pharmaceutical', 'Sony': 'Electronics'}
+```
