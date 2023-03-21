@@ -443,6 +443,29 @@ print("The temperature in Fahrenheit is: " + str(fahrenheit) + " degrees.")
 
 **NOTE:** The system will produce an error if you accept only a specific data type but an other input has been made: <br>
 For example *float* is expected, but *string* was entered: `ValueError: could not convert string to float: 'Susi'` <br>
+You can restrict user input in Python to specific symbols using loops and conditional statements. Here's an example where we restrict the input to the symbols `@`, `#`, and `&`: <br>
+
+```python
+# This function checks if a given character is a valid symbol
+def is_valid_symbol(char):
+    valid_symbols = ['@', '#', '&']
+    return char in valid_symbols
+
+# This function gets the user input and checks if it contains only valid symbols
+def get_restricted_input():
+    while True:  # Keep looping until a valid input is received
+        user_input = input("Enter a string with valid symbols (@, #, or &): ")
+        # Output: Enter a string with valid symbols (@, #, or &):
+
+        # Check if all characters in the user input are valid symbols
+        all_valid_symbols = all(is_valid_symbol(char) for char in user_input)
+
+        if all_valid_symbols:  # If all characters are valid symbols, return the input
+            return user_input
+        else:
+            print("Invalid input! Please use only valid symbols: @, #, or &.")
+            # Output: Invalid input! Please use only valid symbols: @, #, or &.
+```
 
 ## Lists in Python
 Lists are enclosed in square brackets and allow you to store, access and manipulate collections of data in a single variable. Lists can hold different data types, such as integers, floats, strings, and even other lists. You can access, modify, add, and remove items from a list using a variety of built-in methods and indexing techniques. Python's list index starts with `[0]`. <br>
