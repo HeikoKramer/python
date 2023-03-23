@@ -1407,3 +1407,48 @@ with open("file.txt", "r") as file:
         # Read the next line from the file
         line = file.readline()
 ```
+
+## For Loops
+For loops are used to iterate over a sequence (such as a list, tuple, string, or other iterable objects). Instead of using a counter variable as in many other programming languages, Python's for loop iterates directly over the items in the sequence. <br>
+
+```python
+# Iterating over a list of numbers
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num)
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+# Iterating over a string
+text = "Python"
+for char in text:
+    print(char)
+# Output:
+# P
+# y
+# t
+# h
+# o
+# n
+
+# Iterating over a tuple
+fruits = ('apple', 'banana', 'cherry')
+for fruit in fruits:
+    print(fruit)
+# Output:
+# apple
+# banana
+# cherry
+
+# Using the range() function to create a sequence of numbers
+for i in range(3):
+    print(i)
+# Output:
+# 0
+# 1
+# 2
+```
