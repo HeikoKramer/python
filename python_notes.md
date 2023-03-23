@@ -1348,3 +1348,49 @@ industries.update(more_industries)
 print(industries)
 # Output: {'Apple': 'Technology', 'Ford': 'Automotive', 'Pfizer': 'Pharmaceutical', 'Sony': 'Electronics'}
 ```
+
+## While Loops
+While loops are a control flow structure in Python that allow you to repeatedly execute a block of code as long as a given condition is true. The loop will continue iterating until the condition becomes false. <br>
+
+```python
+count = 1
+
+# Repeat the loop as long as count is less than or equal to 5
+while count <= 5:
+    print("Current count:", count)
+    count += 1
+
+# Output:
+# Current count: 1
+# Current count: 2
+# Current count: 3
+# Current count: 4
+# Current count: 5
+```
+ 
+The `+=` operator is a shorthand for `count = count + 1`. It adds the value on the right side of the operator (in this case, 1) to the variable on the left side (here, count) and assigns the result back to the variable. This allows you to increment the value of count more concisely. <br>
+<br>
+Examples for commonly used while loop conditions: <br>
+
+```python
+# Loop until a specific value is reached
+while variable < specific_value:
+
+# Loop until a specific value is not equal to the variable
+while variable != specific_value:
+
+# Loop until a list is empty (i.e., has no elements)
+while len(some_list) > 0:
+
+# Loop until a condition involving multiple variables is met
+while variable1 < specific_value1 and variable2 < specific_value2:
+
+# Loop until a boolean flag is set to False
+while boolean_flag:
+
+# Loop until an external resource, such as a file, is fully processed
+while not end_of_file:
+
+# Loop with a complex condition using multiple operators
+while (condition1 and condition2) or (condition3 and not condition4):
+```
