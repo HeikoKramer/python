@@ -1388,9 +1388,22 @@ while variable1 < specific_value1 and variable2 < specific_value2:
 # Loop until a boolean flag is set to False
 while boolean_flag:
 
-# Loop until an external resource, such as a file, is fully processed
-while not end_of_file:
-
 # Loop with a complex condition using multiple operators
 while (condition1 and condition2) or (condition3 and not condition4):
+```
+
+Here an example how to loop through an external file, until it is fully processed: <br>
+
+```python
+with open("file.txt", "r") as file:
+    # Read the first line from the file
+    line = file.readline()
+
+    # Loop until the end of the file is reached
+    while line:
+        # Process the line (e.g., print it)
+        print(line.strip())
+
+        # Read the next line from the file
+        line = file.readline()
 ```
