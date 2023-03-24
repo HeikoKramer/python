@@ -1452,3 +1452,32 @@ for i in range(3):
 # 1
 # 2
 ```
+
+You can use the `key` keyword, to loop through dictionary keys: <br>
+
+```python
+# Loop through a dictionary (keys)
+person = {'name': 'Heiko', 'age': 30, 'city': 'Berlin'}
+for key in person:
+    print(key)
+    # Each iteration gets the next key in the dictionary (e.g., 'name', 'age', 'city')
+```
+
+Or loop through a `key`, `value` pair: <br>
+
+```python
+# Loop through a dictionary (key-value pairs)
+for key, value in person.items():
+    print(key, value)
+    # Each iteration gets the next key-value pair in the dictionary
+```
+
+Looping through sets works as looping through lists in general: <br>
+
+```python
+# Loop through a set
+unique_numbers = {1, 2, 3, 4, 5}
+for number in unique_numbers:
+    print(number)
+    # Each iteration gets the next value in the set (1, 2, 3, …)
+```
