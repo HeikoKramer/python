@@ -1481,3 +1481,97 @@ for number in unique_numbers:
     print(number)
     # Each iteration gets the next value in the set (1, 2, 3, …)
 ```
+
+## Try Except
+In Python, `try … except` blocks are used for error handling. When you anticipate that a certain part of your code might raise an exception (runtime error), you can use the try except block to catch and handle the exception gracefully. This prevents your program from crashing and allows you to provide alternative actions or display informative messages to the user. <br>
+
+```python
+# Example 1: Basic try-except block
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Oops! Division by zero is not allowed.")
+# Output: Oops! Division by zero is not allowed.
+
+# Example 2: Catching multiple exceptions
+try:
+    num = int("string")
+    result = 10 / num
+except ZeroDivisionError:
+    print("Oops! Division by zero is not allowed.")
+except ValueError:
+    print("Oops! Invalid input. Please enter a number.")
+# Output: Oops! Invalid input. Please enter a number.
+
+# Example 3: Using a generic except block
+try:
+    num = int("string")
+    result = 10 / num
+except Exception as e:
+    print(f"An error occurred: {e}")
+# Output: An error occurred: invalid literal for int() with base 10: 'string'
+```
+
+Here some examples for the most common error types: <br>
+
+```python
+# SyntaxError: Raised when there's a syntax error in the code
+try:
+    eval('1 ++ 2')
+except SyntaxError as se:
+    print("SyntaxError:", se)
+    # Output: SyntaxError: invalid syntax
+
+# ZeroDivisionError: Raised when attempting to divide by zero
+try:
+    result = 10 / 0
+except ZeroDivisionError as zde:
+    print("ZeroDivisionError:", zde)
+    # Output: ZeroDivisionError: division by zero
+
+# FileNotFoundError: Raised when trying to open a non-existent file
+try:
+    with open("non_existent_file.txt") as file:
+        content = file.read()
+except FileNotFoundError as fnfe:
+    print("FileNotFoundError:", fnfe)
+    # Output: FileNotFoundError: [Errno 2] No such file or directory: 'non_existent_file.txt'
+
+# ValueError: Raised when a function receives an argument of the correct type but an inappropriate value
+try:
+    int("string")
+except ValueError as ve:
+    print("ValueError:", ve)
+    # Output: ValueError: invalid literal for int() with base 10: 'string'
+
+# TypeError: Raised when an operation is performed on an object of an inappropriate type
+try:
+    "1" + 2
+except TypeError as te:
+    print("TypeError:", te)
+    # Output: TypeError: can only concatenate str (not "int") to str
+
+# IndexError: Raised when attempting to access an
+try:
+    my_list = [1, 2, 3]
+    my_list[4]
+except IndexError as ie:
+    print("IndexError:", ie)
+    # Output: IndexError: list index out of range 
+```
+
+To execute specific lines of code even if an exception was thrown, use `finally`: <br>   
+
+```python
+# Using 'finally' with try-except
+try:
+    num = int("string")
+    result = 10 / num
+except ValueError:
+    print("Oops! Invalid input. Please enter a number.")
+finally:
+    print("This block will always be executed, regardless of an exception.")
+# Output:
+# Oops! Invalid input. Please enter a number.
+# This block will always be executed, regardless of an exception.
+```
