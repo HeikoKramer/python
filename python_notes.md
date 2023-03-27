@@ -1618,7 +1618,7 @@ file.close()
 file = open("file.txt", "r")
 print(file.read())
 # Output: Jasmin - Aladdin
-# File has ben overwritten with entered content.
+# File has been overwritten with entered content.
 
 # Appending to a file
 file = open("file.txt", "a")
@@ -1628,7 +1628,7 @@ file.close()
 file = open("file.txt", "r")
 print(file.read())
 # Output: 
-Jasmin - Aladdin
-Elsa - Frozen
+# Jasmin - Aladdin
+# Elsa - Frozen
 ```
 
