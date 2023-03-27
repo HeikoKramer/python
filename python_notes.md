@@ -1575,3 +1575,30 @@ finally:
 # Oops! Invalid input. Please enter a number.
 # This block will always be executed, regardless of an exception.
 ```
+
+## Reading Files
+In Python, reading files is a common and essential task when working with data or text-based input. Python offers several built-in functions and methods that simplify the process of reading, parsing, and extracting information from files.
+
+### open() & close()
+One of the most frequently used functions for file handling is the `open()` function. It provides a way to open a file, read its contents, and perform various operations like **reading**, **writing**, or **appending** data. The `open()` function returns a file object, which can be used to read or manipulate the file's content. <br>
+<br>
+The `close()` method is used to close an opened file and release the resources associated with it. Closing a file ensures that any changes made to it are saved and prevents potential data loss or file corruption. <br>
+
+```python
+# Reading a file
+file = open("file.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+# Writing to a file
+file = open("file.txt", "w")
+file.write("This is a new line in the file.")
+file.close()
+
+# Appending to a file
+file = open("file.txt", "a")
+file.write("\nThis line is appended to the file.")
+file.close()
+```
+
