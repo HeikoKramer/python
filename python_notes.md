@@ -1643,5 +1643,7 @@ print(file.read())
 # Moana - Moana
 # Rapunzel - Tangled
 # Pocahontas - Pocahontas
+
+# NOTE: write() and writelines() can both used with a file opened in "a" mode, to append instead of overwriting.
 ```
 
