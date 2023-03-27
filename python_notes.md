@@ -1647,3 +1647,83 @@ print(file.read())
 # NOTE: write() and writelines() can both used with a file opened in "a" mode, to append instead of overwriting.
 ```
 
+### with statement
+The `with` statement in Python is used for convenient and efficient handling of resources, such as file operations. When working with the `open()` function, it is recommended to use the with statement because it automatically manages the opening and closing of files. This ensures that the file is properly closed after the block of code is executed, even if an exception occurs during the operation. By using the `with` statement, you can avoid potential issues like resource leaks, data loss, or file corruption. <br>
+<br>
+**file.txt**
+
+```
+Moana - Moana
+Rapunzel - Tangled
+Pocahontas - Pocahontas
+```
+
+```python
+# Reading a file in 'r' mode
+with open("file.txt", "r") as file:
+    content = file.read()
+    print(content)
+# Output:
+# Moana - Moana
+# Rapunzel - Tangled
+# Pocahontas - Pocahontas
+
+# Writing to a file in 'w' mode
+with open("file.txt", "w") as file:
+    file.write("Elsa - Frozen")
+# After executing this code, the content of file.txt will be:
+# Elsa - Frozen
+
+# Appending to a file in 'a' mode
+with open("file.txt", "a") as file:
+    file.write("\nAnna - Frozen")
+# After executing this code, the content of file.txt will be:
+# Elsa - Frozen
+# Anna - Frozen
+
+# Reading and writing to a file in 'r+' mode
+with open("file.txt", "r+") as file:
+    content = file.read()
+    print(content)
+    # Output:
+    # Elsa - Frozen
+    # Anna - Frozen
+    file.write("\nMerida - Brave")
+# After executing this code, the content of file.txt will be:
+# Elsa - Frozen
+# Anna - Frozen
+# Merida - Brave
+```
+
+You can as well read multiple files using the `with` statement: <br>
+<br>
+**file1.txt**:
+
+```
+Elsa - Frozen
+Anna - Frozen
+```
+
+**file2.txt**:
+
+```
+Merida - Brave
+Tiana - The Princess and the Frog
+```
+
+```python
+# Reading multiple files at once using the 'with' statement
+with open("file1.txt", "r") as file1, open("file2.txt", "r") as file2:
+    content1 = file1.read()
+    content2 = file2.read()
+
+print(content1)
+# Output:
+# Elsa - Frozen
+# Anna - Frozen
+
+print(content2)
+# Output:
+# Merida - Brave
+# Tiana - The Princess and the Frog
+```
