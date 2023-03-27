@@ -1630,5 +1630,18 @@ print(file.read())
 # Output: 
 # Jasmin - Aladdin
 # Elsa - Frozen
+
+# Writing multiple lines to a file using the writelines() method
+lines_to_write = ["Moana - Moana\n", "Rapunzel - Tangled\n", "Pocahontas - Pocahontas\n"]
+file = open("file.txt", "w")
+file.writelines(lines_to_write)
+file.close()
+# Reading same file
+file = open("file.txt", "r")
+print(file.read())
+# Output:  
+# Moana - Moana
+# Rapunzel - Tangled
+# Pocahontas - Pocahontas
 ```
 
