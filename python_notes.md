@@ -1775,3 +1775,45 @@ Here's a list of some popular third-party Python modules and a brief description
 * `celery`: A distributed task queue library that enables you to distribute the execution of tasks across multiple worker processes or even multiple machines.
 
 The **Python Package Index (PyPI)** is the primary source for 3rd-party modules. PyPI is a repository of software packages developed and shared by the Python community. You can browse, search, and install packages from PyPI using package management tools like `pip`. Here's the [link to PyPI](https://pypi.org/). <br>
+
+### add modules into your script
+**Built-in modules** are **pre-installed** in the Python installation directory, and they are available for use in any Python script without needing to install or import them separately. To add a built-in module to your Python script, you simply need to import it at the beginning of your code using the import statement. <br>
+<br>
+In the following example, we import the math module and use one of its methods to perform a calculation: <br>
+
+```python
+# Import the build-in math module
+import math
+
+# Calculate the square root of 25 using the sqrt() function
+result = math.sqrt(25)
+
+print("The square root of 25 is:", result)
+# Output: The square root of 25 is: 5.0
+```
+
+On the other hand, third-party modules are not included in the standard Python installation, and they need to be installed separately. The most popular way to install third-party modules is by using the Python Package Index (PyPI) and `pip`, the package installer for Python.
+
+Make sure to use `pip` for the version of Python you're using. To install a third-party module using `pip`, you can use the following command in your terminal or command prompt: <br>
+
+```sh
+pip install requests
+```
+
+With that command we have installed the `requests` module, which allows us to send HTTP requests to URLs and receive responses. Now we can import and use the module like any other build-in module or locally stored Python file: <br>
+
+```python
+# Import the third-party requests module
+import requests
+
+# Make a GET request to a URL 
+response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
+
+print(response.content)
+# Output:
+# b'{\n  "userId": 1,\n  "id": 1,\n  "title": "delectus aut autem",\n  "completed": false\n}'
+```
+
+Besides `pip`, there are other methods to download and import modules. One such method is using Anaconda, a popular Python distribution that includes many scientific computing packages. Anaconda provides its own package manager called `conda`, which you can use to install and manage packages. <br>
+<br>
+Another method is to download and install the module manually from the official website or repository and then add the module path to your PYTHONPATH environment variable. This method is not recommended for beginners, as it can be error-prone and time-consuming. <br>
