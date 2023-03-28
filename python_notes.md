@@ -1814,6 +1814,20 @@ print(response.content)
 # b'{\n  "userId": 1,\n  "id": 1,\n  "title": "delectus aut autem",\n  "completed": false\n}'
 ```
 
+When you install a Python module using `pip`, it is installed in the **site-packages directory** of your Python installation. The location of this directory may vary depending on your operating system and Python version. To find the site-packages directory for your Python installation, you can use the following command in your terminal or command prompt: <br>
+
+```sh
+python -m site --user-site
+```
+
+This will print the path to the site-packages directory, which should contain all the modules you've installed using `pip`. <br>
+<br>
+To remove a Python module that you've installed using `pip`, you can use the **uninstall command** with the module's name. For example, to uninstall the `requests` module, you can use the following command: <br>
+
+```sh
+pip uninstall requests
+```
+
 Besides `pip`, there are other methods to download and import modules. One such method is using Anaconda, a popular Python distribution that includes many scientific computing packages. Anaconda provides its own package manager called `conda`, which you can use to install and manage packages. <br>
 <br>
 Another method is to download and install the module manually from the official website or repository and then add the module path to your PYTHONPATH environment variable. This method is not recommended for beginners, as it can be error-prone and time-consuming. <br>
