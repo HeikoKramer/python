@@ -1730,7 +1730,8 @@ print(content2)
 
 ## Modules
 In Python, a module is a file containing Python definitions and statements that can be imported into other Python scripts. Modules allow developers to group related code and reuse it across different projects. By using modules, you can organize your code better, improve maintainability, and avoid code duplication. Python has a vast library of built-in modules, as well as a large number of third-party modules available. <br> 
-<br>
+
+### built-in modules
 Here's an overview of some of the most commonly used built-in modules and their purposes: <br>
 
 * `os`: Provides a way to interact with the operating system, such as file and directory management, environment variables, and process control.
@@ -1749,6 +1750,9 @@ Here's an overview of some of the most commonly used built-in modules and their 
 * `csv`: Offers functionality for reading and writing CSV (Comma Separated Values) files, a common format for data exchange between applications.
 * `sqlite3`: Includes an interface for working with SQLite databases, a lightweight disk-based database that doesn't require a separate server process.
 
+A list of internal modules can be found here: [Python Module Index](https://docs.python.org/3/py-modindex.html)
+
+### 3rd-party modules
 Here's a list of some popular third-party Python modules and a brief description of their functionalities: <br>
 
 * `requests`: Simplifies the process of making HTTP requests and handling responses, making it easier to interact with web services and APIs.
@@ -1769,3 +1773,5 @@ Here's a list of some popular third-party Python modules and a brief description
 * `pytest`: A powerful and mature testing framework for Python that simplifies the process of writing and running tests, offering advanced features and plugin support.
 * `selenium`: A browser automation library, often used for web testing, that allows you to control a browser programmatically and interact with web pages.
 * `celery`: A distributed task queue library that enables you to distribute the execution of tasks across multiple worker processes or even multiple machines.
+
+The **Python Package Index (PyPI)** is the primary source for 3rd-party modules. PyPI is a repository of software packages developed and shared by the Python community. You can browse, search, and install packages from PyPI using package management tools like `pip`. Here's the [link to PyPI](https://pypi.org/). <br>
