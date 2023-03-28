@@ -1727,3 +1727,26 @@ print(content2)
 # Merida - Brave
 # Tiana - The Princess and the Frog
 ```
+
+## Modules
+In Python, a module is a file containing Python definitions and statements that can be imported into other Python scripts. Modules allow developers to group related code and reuse it across different projects. By using modules, you can organize your code better, improve maintainability, and avoid code duplication. Python has a vast library of built-in modules, as well as a large number of third-party modules available. <br> 
+<br>
+Here's an overview of some of the most commonly used built-in modules and their purposes: <br>
+
+* os: Provides a way to interact with the operating system, such as file and directory management, environment variables, and process control.
+* sys: Enables access to some variables and functions related to the Python interpreter and its environment, such as command-line arguments and exit status.
+* math: Offers mathematical functions and constants, such as trigonometric functions, logarithms, and the value of pi.
+* random: Includes functions for generating random numbers and performing random operations, like shuffling a list or selecting a random element.
+* datetime: Supports working with dates and times, including arithmetic operations, formatting, and parsing.
+* json: Enables the encoding and decoding of JSON data, which is commonly used for data exchange between a server and a client.
+* re: Provides regular expression support for advanced text manipulation and pattern matching.
+* collections: Offers additional data structures and tools for working with collections, such as namedtuple, deque, Counter, and OrderedDict.
+* itertools: Contains a set of tools for working with iterable objects, such as iterators and generators, which help create efficient looping constructs.
+* urllib: A package that contains multiple modules for working with URLs, such as opening, reading, parsing, and constructing URLs.
+* socket: Enables low-level networking functionality, such as creating and managing sockets for various networking protocols like TCP and UDP.
+* threading: Supports the creation and management of threads, which can be used for concurrent execution of multiple tasks within a single process.
+* subprocess: Provides a way to create and interact with additional processes, allowing you to run external programs, connect to their input/output/error pipes, and obtain their return codes.
+* csv: Offers functionality for reading and writing CSV (Comma Separated Values) files, a common format for data exchange between applications.
+* sqlite3: Includes an interface for working with SQLite databases, a lightweight disk-based database that doesn't require a separate server process.
+
+
