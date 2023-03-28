@@ -1828,6 +1828,7 @@ To remove a Python module that you've installed using `pip`, you can use the **u
 pip uninstall requests
 ```
 
+<br>
 Besides `pip`, there are other methods to download and import modules. One such method is using Anaconda, a popular Python distribution that includes many scientific computing packages. Anaconda provides its own package manager called `conda`, which you can use to install and manage packages. <br>
 <br>
 Another method is to download and install the module manually from the official website or repository and then add the module path to your PYTHONPATH environment variable. This method is not recommended for beginners, as it can be error-prone and time-consuming. <br>
