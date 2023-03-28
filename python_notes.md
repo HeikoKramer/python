@@ -1749,4 +1749,23 @@ Here's an overview of some of the most commonly used built-in modules and their 
 * `csv`: Offers functionality for reading and writing CSV (Comma Separated Values) files, a common format for data exchange between applications.
 * `sqlite3`: Includes an interface for working with SQLite databases, a lightweight disk-based database that doesn't require a separate server process.
 
+Here's a list of some popular third-party Python modules and a brief description of their functionalities: <br>
 
+* `requests`: Simplifies the process of making HTTP requests and handling responses, making it easier to interact with web services and APIs.
+* `numpy`: Provides support for numerical computing with Python, including efficient array operations and complex mathematical functions.
+* `pandas`: A powerful data manipulation library that offers data structures like DataFrame and Series for handling and analyzing large datasets.
+* `matplotlib`: A widely-used plotting library for creating static, interactive, and animated visualizations in Python.
+* `scipy`: A scientific computing library built on top of NumPy that provides additional functionality, such as optimization, signal processing, and statistical functions.
+* `scikit-learn`: A machine learning library offering a wide range of algorithms for classification, regression, clustering, and dimensionality reduction.
+* `tensorflow`: An open-source machine learning library developed by Google for creating, training, and deploying neural networks and other machine learning models.
+* `keras`: A high-level neural networks API, running on top of TensorFlow, Microsoft Cognitive Toolkit, Theano, or PlaidML, designed for fast experimentation with deep learning.
+* `flask`: A lightweight web application framework that allows you to build web applications and APIs quickly and easily.
+* `django`: A high-level web framework that encourages rapid development and clean, pragmatic design, enabling you to build robust web applications quickly.
+* `beautifulsoup4`: A library for web scraping purposes, making it easy to parse HTML and XML documents and extract useful information.
+* `sqlalchemy`: A SQL toolkit and Object-Relational Mapping (ORM) library for Python, providing a full suite of well-known enterprise-level persistence patterns.
+* `pillow`: An easy-to-use library for opening, manipulating, and saving image files in various formats, which is a fork of the Python Imaging Library (PIL).
+* `pytorch`: An open-source machine learning library based on the Torch library, primarily developed by Facebook's AI Research lab, for deep learning and tensor computation.
+* `fastapi`: A modern, fast, web framework for building APIs with Python based on standard Python type hints, providing high performance and easy-to-learn syntax.
+* `pytest`: A powerful and mature testing framework for Python that simplifies the process of writing and running tests, offering advanced features and plugin support.
+* `selenium`: A browser automation library, often used for web testing, that allows you to control a browser programmatically and interact with web pages.
+* `celery`: A distributed task queue library that enables you to distribute the execution of tasks across multiple worker processes or even multiple machines.
